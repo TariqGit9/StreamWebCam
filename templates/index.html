@@ -1,0 +1,31 @@
+{% extends 'template.html' %}
+{% block main %}
+<div class="container-fluid py-4">
+ 
+    <div class="card row" id="main-content">
+        <div class="col-12">
+            <img src="{{ url_for('video_feed') }}" style="width: 100%; height: 100%;"  class="mt-2 ml-2 mr-2 mb-2">
+        </div>
+
+    </div>
+
+
+  <footer class="footer pt-3  ">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-lg-between">
+        <div class="col-lg-6 mb-lg-0 mb-4">
+          <div class="copyright text-center text-sm text-muted text-lg-start">
+            Free Bootstrap Template by <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a>
+          </div>
+        </div>
+    </div>
+  </footer>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script>
+
+</script>
+{% endblock %}
