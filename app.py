@@ -7,7 +7,6 @@ app = Flask(__name__)
 # Path to your video file
 # video_path = 'static/vid/vid.mp4'
 
-# stream video 
 # cap = cv2.VideoCapture(video_path)
 
 # Initialize the webcam
