@@ -5,12 +5,14 @@ from flask import Flask, render_template, Response
 app = Flask(__name__)
 
 # Path to your video file
-video_path = 'static/vid/vid.mp4'
+# video_path = 'static/vid/vid.mp4'
+
+# stream video 
+# cap = cv2.VideoCapture(video_path)
 
 # Initialize the webcam
-# cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0)
 
-cap = cv2.VideoCapture(video_path)
 
 def generate_frames():
     while True:
